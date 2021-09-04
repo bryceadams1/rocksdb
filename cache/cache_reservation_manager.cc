@@ -48,7 +48,7 @@ Status CacheReservationManager::UpdateCacheReservation(
     return s;
   } else {
     // In delayed decrease mode, we don't decrease cache reservation
-    // untill the memory usage is less than 3/4 of what we reserve
+    // until the memory usage is less than 3/4 of what we reserve
     // in the cache.
     // We do this because
     // (1) Dummy entry insertion is expensive in block cache
